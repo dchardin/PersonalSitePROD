@@ -1,0 +1,227 @@
+/* Reset */
+html, body, h1, p, a, div, section {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  font-family: 'Cutive Mono';
+  font-size: 25px;
+  color: white;
+
+}
+
+#homeBody {
+  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('../img/hangingrock2015.jpg');
+}
+
+#aboutMeBody {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/atHome.jpg');
+}
+
+#howIWorkBody {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/working1.jpg');
+}
+
+#devWorkshedBody {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/working1.jpg');
+}
+
+a {
+  color: transparent;
+}
+
+.shedProjectImg {
+    height: 75%;
+    width: 75%;
+    max-height: 300px;
+    max-width: 300px;
+    float:left;
+    margin: 10px 10px 10px 10px;
+    border:solid #fff;
+    border-width:6px 6px 6px 6px;
+    box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
+    -webkit-box-shadow:1px 1px 5px #333;
+    -moz-box-shadow:1px 1px 5px #333;
+}
+
+.topleft {
+    position: fixed;
+    width: 100%;
+    font-family: 'Cutive Mono';
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    z-index: 3;
+}
+
+.middle_top {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Cutive Mono';
+    font-size: 35px;
+    color: white;
+}
+
+.middle_top img {
+    width: 150px;
+    padding: 5px 10px 15px 10px;
+}
+
+.middle {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    max-width: 75%;
+    max-height: 60%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-family: 'Cutive Mono';
+    font-size: 25px;
+    color: white;
+}
+
+.middle hr {
+    display: block;
+    margin-top: 10px;
+}
+
+.middle_bottom {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    max-width: 50%;
+    max-height: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Cutive Mono';
+    font-size: 35px;
+    color: white;
+
+}
+
+.bottom_top {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    max-height: 25%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Cutive Mono';
+    font-size: 35px;
+    color: white;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    font-family: 'Cutive Mono';
+    font-size: 35px;
+    color: white;
+}
+
+#clearbutton1 {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: 'Cutive Mono';
+  color: #ffffff;
+  font-size: 20px;
+  display: inline-block;
+  font-weight: 700;
+  line-height: normal;
+  width: 130px;
+  padding: 5px 15px 5px 15px;
+  margin: 5px;
+  background: transparent;
+  border: solid #ffffff 2px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#clearbutton2 {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 2px;
+  font-family: 'Cutive Mono';
+  color: #ffffff;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: 700;
+  line-height: normal;
+  width: 100px;
+  padding: 1px 1px 1px 1px;
+  margin: 5px;
+  background: transparent;
+  border: solid #ffffff 2px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#clearbutton1:hover {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: 'Cutive Mono';
+  color: #96a8b3;
+  font-size: 20px;
+  width: 130px;
+  padding: 5px 15px 5px 15px;
+  margin: 5px;
+  background: transparent;
+  border: solid #96a8b3 2px;
+  text-decoration: none;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  #homeBody {
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('../img/hangingrock2015.jpg');
+  }
+  #aboutMeBody {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/atHome.jpg');
+  }
+
+  #howIWorkBody {
+   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/working1.jpg');
+  }
+
+  #devWorkshedBody {
+   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../img/working1.jpg');
+  }
+
+.shedProjectImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+ }
+
+.middle {
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    max-width: 95%;
+    max-height: 60%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-family: 'Cutive Mono';
+    font-size: 20px;
+    color: white;
+}
